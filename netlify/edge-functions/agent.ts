@@ -3,13 +3,13 @@ import page from "../og-page.js";
 
 
 export default async (request: Request, context: Context) => {
-  
+
   // The domain for this URL shortener as provided by Netlify's environment
-  // or a live local URL for testing. 
-  const rootDomain = context.site.url; 
+  // or a live local URL for testing.
+  const rootDomain = context.site.url;
   // const rootDomain = `https://test--${context.site.name}.netlify.live`;  // Running with `npm start` to access Netlify Dev Live
 
-   
+
   // the requesting user agent
   const agent = request.headers.get("user-agent");
 
@@ -27,7 +27,7 @@ export default async (request: Request, context: Context) => {
   });
 
 
-    
+
 };
 
 // All requests to this domain come through here

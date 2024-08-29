@@ -1,5 +1,5 @@
-const imageURL = function(data) {
-  if(data.original_og) {
+const imageURL = function (data) {
+  if (data.original_og) {
     return `${data.original_og}`;
   } else {
     return `${data.domain}/image${data.path}.png`;
@@ -7,7 +7,7 @@ const imageURL = function(data) {
 };
 
 export default (data) => {
- return `
+  return `
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -36,4 +36,4 @@ export default (data) => {
  </body>
  </html>
  `;
-}
+};
