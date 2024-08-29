@@ -62,6 +62,9 @@ module.exports = (data) => {
       <h1><a href="${data.shortURL}">${data.shortURL.split("://")[1]}</a></h1>
       <a class="dest" href="${data.destinationURL}">${data.destinationURL}</a>
     </header>
+    <main>
+      <img src='data:image/svg+xml;utf8,${ data.svg }'>
+    </main>
   </body>
   </html>`;
 };
